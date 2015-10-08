@@ -9,7 +9,7 @@ Run the following command within the Mandelbrot directory:
 
 This will create a "target" folder. Inside this folder run:
 
-    java -jar mandelbrot-1.0-SNAPSHOT-jar-with-dependencies.jar
+    java -jar mandelbrot-1.1-SNAPSHOT-jar-with-dependencies.jar
 
 The REST Service is available at:
 
