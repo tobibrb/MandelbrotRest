@@ -1,6 +1,8 @@
 # MandelbrotRest
 Simple Mandelbrot REST implementation
 ## Create executable jar with dependencies and start the server
+To Package the jar file you will need the maven build tool:  
+https://maven.apache.org/install.html  
 Run the following command within the Mandelbrot directory:
 
     mvn package
