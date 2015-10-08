@@ -1,6 +1,6 @@
 # MandelbrotRest
 Simple Mandelbrot REST implementation
-## Create runnable jar with dependencies and start the server
+## Create executable jar with dependencies and start the server
 Run the following command within the Mandelbrot directory:
 
     mvn package
