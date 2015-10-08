@@ -18,8 +18,8 @@ public class MandelbrotRest {
     @GET
     @Path("/getMandelbrot")
     @Produces("image/png")
-    public BufferedImage getMandelbrot(@QueryParam("w") int width, @QueryParam("h") int height, @QueryParam("it") int interations) {
-        int max = 1000;
+    public BufferedImage getMandelbrot(@QueryParam("w") int width, @QueryParam("h") int height, @QueryParam("it") int iterations) {
+        int max = iterations;
         BufferedImage image = new BufferedImage(width, height,
                 BufferedImage.TYPE_INT_RGB);
         int black = 0;
@@ -51,7 +51,8 @@ public class MandelbrotRest {
         try {
             HttpServer server = HttpServerFactory.create("http://0.0.0.0:8080/");
             server.start();
-            //JOptionPane.showMessageDialog(null, "Zum Beenden klicken!");
+            // For windows standalone implementation without cli
+            //JOptionPane.showMessageDialog(null, "Stop server!");
             //server.stop(0);
         } catch (IOException e) {
             e.printStackTrace();
